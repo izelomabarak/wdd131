@@ -8,4 +8,4 @@ const modified = document.querySelector("#modified");
 
 let lastModified = new Date(document.lastModified);
 
-modified.innerHTML = `Today is <span class="highlight">${new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(lastModified)}</span>`;
+modified.innerHTML = `Last Modification: <span class="highlight">${new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(lastModified)}</span>`;
