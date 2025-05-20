@@ -7,7 +7,7 @@ li.textContent = input.Value;
 deleteButton.textContent = '❌';
 li.append(deleteButton);
 list.append(li);
-button.addEventListener('click', function(){ if (input.value.trim() !== '') {}
+button.addEventListener('click', () => function() { if (input.value.trim() !== '') {};
     list.removeChild(li);
     input.focus();
     input.value = '';

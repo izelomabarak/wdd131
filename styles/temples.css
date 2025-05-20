@@ -1,0 +1,78 @@
+body {
+    font-family: Tektur, Georgia, serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+    padding: 15px;
+    background-color: aqua;
+}
+
+ @media (max-width: 768px){
+    main { 
+    max-width: 250px;
+    margin: 0 auto;
+    }
+
+    .pictures { 
+        color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        padding: 10px;
+        border: 5rem;
+        border-color: black;
+        border-radius: 1rem;
+    }
+
+    #menu {
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+
+    .navigation a:hover,
+    .navigation a:active {
+        color: white;
+        background-color: black;
+    }
+
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+}
+
+footer{
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
