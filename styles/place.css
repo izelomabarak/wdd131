@@ -1,0 +1,41 @@
+:root {
+    --styling-font: Tektur, Georgia, serif;
+    --Principal-Color: darkgreen;
+    --Secondary-color: darkred;
+    --Accent1-color: #f5e0e0;
+    --Accent2-color: #eefddd;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--styling-font);
+}
+
+header {
+    padding: 5px;
+    background-color: var(--Secondary-color);
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--Principal-Color);
+    color: var(--Accent1-color);
+}
+
+ @media (max-width: 768px){
+    .principal img {
+    width: 100%;
+    }
+
+    main {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: var(--Principal-Color);
+    padding: 10px;
+    text-align: center;
+    color: var(--Accent1-color);
+}
