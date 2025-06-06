@@ -1,0 +1,37 @@
+@media (min-width: 768px) { 
+    .pictures { 
+    display:grid; 
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 25px;
+    place-items: center;
+    }
+
+    #menu {
+		display: none;
+	}
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: right;
+        align-self: right;
+        padding: 1rem;
+    }
+
+    .navigation li{
+        flex: 1 1 auto
+    }
+
+    .navigation li a{
+        color: aliceblue;
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        background-color: black; 
+        border-radius: 1rem;
+    }
+
+    .navigation li a:hover{
+        background-color: aquamarine;
+    }
+}
