@@ -1,9 +1,15 @@
 @media (min-width: 768px) { 
     .pictures { 
     display:grid; 
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
     grid-gap: 25px;
     place-items: center;
+    }
+
+    .pictures section{ 
+    background-color: aquamarine;
+    padding: 1rem;
+    border: 1px solid black;
     }
 
     #menu {
@@ -13,8 +19,6 @@
     .navigation {
         display: flex;
         flex-wrap: wrap;
-        align-items: right;
-        align-self: right;
         padding: 1rem;
     }
 

@@ -150,9 +150,9 @@ function createTempleCart(filteredTemples){
 		let image = document.createElement("img")
 
 		name.textContent = temple.templeName;
-		location.textContent = `<span class="label">Location:</span> ${temple.location}`; 
-		dedicated.textContent = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-		area.textContent = `<span class="label">Size:</span> ${temple.area} sq ft`;
+		location.textContent = `Location: ${temple.location}`; 
+		dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+		area.textContent = `Size: ${temple.area} sq ft`;
 		image.setAttribute("src", temple.imageUrl);
 		image.setAttribute("alt", `${temple.templeName} Temple`);
 		image.setAttribute("loading", "lazy");

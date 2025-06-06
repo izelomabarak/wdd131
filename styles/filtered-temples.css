@@ -8,6 +8,11 @@ header {
     grid-gap: 30px;
     padding: 15px;
     background-color: aqua;
+    align-items: center;
+}
+
+main h2{
+    text-align: center;
 }
 
  @media (max-width: 768px){
@@ -25,6 +30,16 @@ header {
         border: 5rem;
         border-color: black;
         border-radius: 1rem;
+    }
+
+    .pictures section{ 
+    background-color: aquamarine;
+    padding: 1rem;
+    border: 1px solid black;
+    }
+
+    .pictures section img{ 
+    width: 100%;
     }
 
     #menu {
