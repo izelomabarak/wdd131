@@ -1,0 +1,120 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+header {
+    padding: .5rem 2%;
+    background-color: aqua;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.wf1 { 
+    color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    padding: 10px;
+    border: 5rem;
+    border-radius: 1rem;
+    place-items: center;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #0066ffbb;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    align-items: center;
+    background-color: rgba(0, 195, 255, 0.123);
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.wf1 div{
+    font-size: .9rem;
+}
+
+.wf1 div.overall,
+.wf1 div.date,
+.wf1 div.features,
+.wf1 div.review,
+.wf1 div.name {
+    padding-top: 2rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+{
+    background-color: rgba(139, 139, 139, 0.226);
+    display: block;
+    border: solid 1px #000000;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 div.overall {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.wf1 div.overall label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.wf1 input[type="radio"] {
+    margin-top: 0.3rem;
+}
+
+.wf1 input[type="submit"]{
+    border: none;
+    background-image: linear-gradient( aqua, rgb(54, 241, 241));
+    color: #000000;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    max-width: 100%;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px aqua;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: aqua;
+    padding: .5rem 2%;
+    text-align: center;
+}

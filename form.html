@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+    <head>
+        <meta charset="utf-8">
+        <title>WDD 131 - Dynamic Web Fundamentals - Jose Luis Izelo Mabarak</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Luis Izelo Mabarak, this is the first activitie of WDD 131, Home Page.">
+        <meta name="author" content="Jose Luis Izelo Mabarak">    
+        <link href="styles/form-small.css" rel="stylesheet">
+        <link href="styles/form-large.css" rel="stylesheet">
+        <script src="scripts/form.js" defer></script> 
+    </head>
+    <body>
+	    <header>
+            <h1>Product Review</h1>
+        </header>
+            <form method="get" action="review.html" class="wf1">
+                <fieldset>
+                    <div class="product">Product Name</div>
+                        <label>
+                            <select name="subject" id="productSelect" required>
+                            <option value="" selected disabled>Select a Product ... &#9662;</option>
+                            <option value="fc-1888"></option>
+                            <option value="fc-2050"></option>
+                            <option value="fs-1987"></option>
+                            <option value="ac-2000"></option>
+                            <option value="jj-1969"></option>
+                        </select>
+                    </label>
+
+                    <div class="overall">Overall Rating
+                    <label>☆<input type="radio" name="rating" value="one" id="onestar" required></label>
+                    <label>☆☆<input type="radio" name="rating" value="two" id="twostar" required></label>
+                    <label>☆☆☆<input type="radio" name="rating" value="three" id="threestar" required> </label>
+                    <label>☆☆☆☆<input type="radio" name="rating" value="four" id="fourstar" required> </label>
+                    <label>☆☆☆☆☆<input type="radio" name="rating" value="five" id="fivestar" required></label>
+                    </div>
+
+                    <div class="date">Date of Installation</div>
+                    <label><input type="date" name="installationDate" id="date" required></label>
+                        
+                    <div class="features">Which features did you find useful in the product?</div>
+                    <div class="apply">(Check all that apply)</div>                        
+                    <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
+                    <label><input type="checkbox" name="simple" value="yes" id="simple">Ease of Use</label>
+                    <label><input type="checkbox" name="perfomance" value="yes" id="perfomance">Perfomance</label>
+                    <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+
+                    <div class="review">Written Review</div>
+                    <label><input type="text" name="review" id="review"></label>
+
+                    <div class="name">Your Name</div>                        
+                    <label><input type="text" name="name" id="name"></label>
+                </fieldset>
+                <input type="submit" value = "Send my Review">  
+            </form>        
+        </main>
+        <footer>
+            <p id="year"></p>
+            <p id="modified"></p>
+        </footer>
+    </body>
+</html>
