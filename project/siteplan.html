@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WDD 131 - Website Planning Document - Jose Luis Izelo Mabarak</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Luis Izelo Mabarak, this is the first activitie of WDD 131, Home Page.">
+        <meta name="author" content="Jose Luis Izelo Mabarak">      
+        <!--Tektur-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="stylesheet" href="styles/place.css">      
+        <script src="scripts/place.js" defer></script> 
+    </head>
+    <body>
+        <header>
+            <h1>Mexico</h1>
+        </header>
+        <main>
+            <div class="hero">
+                <picture class="principal">
+                    <source srcset="images/mexico-large.webp" media="(min-width: 768px)">
+                    <img src="images/mexico.webp" alt="Mexico">
+                </picture>
+                <article class="data">
+                    <h2>Data</h2>
+                        <p>Area: 1,972,550 km2</p>
+                        <p>Population: 131,946,900</p>
+                        <p>Capital: Mexico City</p>
+                        <p>Languages: Spanish (de facto) None (de jure)</p>
+                        <p>Currency: Mexican peso MXN</p>
+                        <p>Time Zone: UTC−8 to −5</p>
+                        <p>Calling Code: +52</p>
+                        <p>Internet TLD: .mx</p>
+                </article>     
+                <article class="weather">
+                    <h2>Weather</h2>
+                    <img src="images/partly-cloudy.svg" alt="Mexico" width="75">
+                    <p>Temperature: 10 °C</p>
+                    <p>Conditions: Partly Cloudy</p>
+                    <p>Wind: 9 km/h</p>
+                    <p id="windChill"></p>
+                </article> 
+            </div> 
+        </main>
+        <footer>
+            <p id="year"></p>
+            <p id="modified"></p>
+        </footer>
+    </body>
+</html>
