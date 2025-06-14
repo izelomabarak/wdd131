@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Luis Izelo | WDD130 | Contact Us page for Fast River</title>
+        <meta name="description" content="This is the Contact Us Page for the Rafting Website proyect, this is the second page of a Rafting Website, .">
+        <meta name="author" content="Jose Luis Izelo Mabarak">
+        <!--Tektur-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!--Raleway-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="styles/suscription-large.css">
+        <link rel="stylesheet" href="styles/suscription.css">      
+        <script src="scripts/suscription.js" defer></script>      
+    </head>
+    <body>
+        <header>     
+            <img src="images/logo.jpg" loading="lazy" alt="Logo">
+            <h1>All About Greenhouses</h1>
+            <a id="menu" href="#"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="greenhoses-pictures.html">Greenhoses Tipes</a></li>
+                    <li><a href="suscription.html">Suscription</a></li>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </nav>         
+        </header>
+        <main>  
+            <div class="introduction">
+                <article>
+                    <h2>The Fast River Way</h2>
+                    <p>For more news and more information abaut Greenhoses suscribe to our weekly magazine, you will knew everiting about the Greenhoses and is totaly free, what are you wating!</p>
+                </article>
+                <picture class="introduction-img">
+                    <img src="images/hapy.webp" loading="lazy" alt="Hapy Farmer" width="270">
+                </picture>
+            </div>
+            <form method="get" action="confirmation.html" >
+                <fieldset>
+                    <legend>Suscribe to our weekly magazine</legend>
+                    <div>Personal Information</div>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+                <fieldset>
+                    <div>Coments or Questions</div>
+                    <label for="message">Enter your mesage:</label>
+                    <textarea id="message" name="message" rows="4"></textarea><br>
+                </fieldset>
+                <button type="submit">Submit Poll</button>
+            </form>
+        </main>
+        <footer>
+            <p id="year"></p>
+            <p id="modified"></p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </footer>
+    </body>
+</html>

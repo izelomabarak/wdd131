@@ -1,0 +1,96 @@
+:root {
+    --styling-font-title: Tektur, Georgia, serif;
+    --styling-font-text: Raleway, Georgia, sans-serif;
+    --Accent1-Color: #191221;
+    --Accent2-color: #2a090e;
+    --Title-color: #2ac62f;
+    --Text-color: #00ff04;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) { 
+    #menu {
+		display: none;
+	}
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .navigation li{
+        flex: 1 1 auto
+    }
+
+    .navigation li a{
+        color: var(--Accent1-Color);
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        background-color: var(--Text-color); 
+        border-radius: 1rem;
+    }
+
+    .navigation li a:hover{
+        color: white;
+        background-color: black;
+    }
+    
+    .hero {
+    position: relative;
+    }
+
+    .hero img {
+    width: 100%;
+    }
+
+    .hero h2 {
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    margin: 0 auto;
+    padding: 1rem;
+    }
+
+    article.description {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 20%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #00ff0431;
+    }
+
+    article.description h3 {
+        background-color: var(--Title-color);
+        padding: 1rem;
+    }
+
+    article.importance {
+    position: absolute;
+    top: 500px;
+    right: 30px;
+    width: 20%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #00ff0431;
+    }
+
+    article.importance h3 {
+        background-color: var(--Title-color);
+        padding: 1rem;
+    }
+
+    .bellow-hero {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 15px;
+    }
+    .information-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}

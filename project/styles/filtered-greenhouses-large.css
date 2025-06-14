@@ -1,0 +1,80 @@
+:root {
+    --styling-font-title: Tektur, Georgia, serif;
+    --styling-font-text: Raleway, Georgia, sans-serif;
+    --Accent1-Color: #191221;
+    --Accent2-color: #2a090e;
+    --Title-color: #2ac62f;
+    --Text-color: #00ff04;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) { 
+    .pictures { 
+    display:grid; 
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 25px;
+    place-items: center;
+    }
+
+    .pictures section{ 
+    background-color: var(--Text-color);
+    padding: 1rem;
+    border: 1px solid black;
+    }
+    
+    #menu {
+		display: none;
+	}
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .navigation li{
+        flex: 1 1 auto
+    }
+
+    .navigation li a{
+        color: var(--Accent1-Color);
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        background-color: var(--Text-color); 
+        border-radius: 1rem;
+    }
+
+    .navigation li a:hover{
+        color: white;
+        background-color: black;
+    }
+
+    #tipes {
+		display: none;
+	}
+
+    .select {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .select li{
+        flex: 1 1 auto
+    }
+
+    .select li a{
+        color: var(--Accent1-Color);
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        background-color: var(--Text-color); 
+        border-radius: 1rem;
+    }
+
+    .select li a:hover{
+        color: white;
+        background-color: black;
+    }
+}
